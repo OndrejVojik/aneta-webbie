@@ -4,12 +4,19 @@ html {
 body {
   background-color: black;
   width: 100%;
+  font-family: sans-serif;
 }
 
 .web {
   width: 80%;
-  background-color: green;
+  background-color: white;
   margin: 0 auto;
+}
+
+
+
+h2{
+    font-size: 3rem;
 }
 
 .navigation {
@@ -20,6 +27,7 @@ body {
   background-color: white;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .navigation__logo {
@@ -72,8 +80,8 @@ header h1 span {
   font-size: 1.5rem;
   margin-top: 5px;
 }
-.services{
-    position: relative;
+.services {
+  position: relative;
 }
 .services__process {
   display: flex;
@@ -112,13 +120,12 @@ header h1 span {
 }
 
 .services__circles {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   position: absolute;
   bottom: 250px;
- 
 }
 
 .services__circles-item {
@@ -126,4 +133,61 @@ header h1 span {
   height: 100px;
   border-radius: 50%;
   background-color: white;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.skills h2{
+color: #54be90;
+}
+
+.skills__item-wrap {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skills__item {
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  background-color: #54be90;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__item-text {
+  width: 20%;
+  height: 100%;
+  background-color: #232323;
+}
+.skills__item-text p {
+  color: white;
+  text-align: center;
+}
+.skills__item-space {
+}
+.skills__item-number {
+  background-color: #ebebeb;
+}
+.skills__item-number p{
+    color: #444444;
+    text-align: right;
+    padding-right: 20px;
+}
+.skills__item-number.eighty {
+  width: 20%;
+}
+.skills__item-number.seventy {
+  width: 30%;
+}
+.skills__item-number.sixty {
+  width: 40%;
+}
+.skills__item-number.fifty {
+  width: 50%;
 }
