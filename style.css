@@ -1,76 +1,129 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
-body{
-    background-color: black;
+body {
+  background-color: black;
+  width: 100%;
+}
+
+.web {
+  width: 80%;
+  background-color: green;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+
+.navigation__logo {
+  width: 70px;
+  margin: -5px 10px 0;
+}
+
+.navigation__links {
+  background-color: #232323;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.navigation__links-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  margin-top: 80px;
+  background-image: url("img/clover.svg");
+  background-color: rgba(0, 0, 0, 1);
+  background-size: 80% auto;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+header h1 span {
+  color: #54be90;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.services{
+    position: relative;
+}
+.services__process {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #232323;
+  height: 300px;
+}
+
+.services__process-item h3 {
+  text-align: center;
+  color: #54be90;
+  font-weight: bold;
+}
+
+.services__process-item p {
+  text-align: center;
+  padding: 0 5px;
+  color: white;
+}
+
+.services__text {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.services__text p {
+  font-size: 1.5rem;
+  text-align: right;
+  line-height: 30px;
+  color: #444444;
+}
+
+.services__circles {
     width: 100%;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 250px;
+ 
 }
 
-.web{
-    width: 80%;
-    background-color: green;
-    margin: 0 auto;
+.services__circles-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
 }
-
-.navigation{
-    width: 80%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    position: fixed;
-    top: 0; 
-}
-
-.navigation__logo{
-    width: 70px;
-    margin: -5px 10px 0;
-}
-
-.navigation__links{
-background-color: #232323;
-width: 80%;
-display: flex;
-justify-content: space-between;
-height: 40px;
-}
-
-.navigation__links-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    color: white;
-    text-decoration: none;
-}
-
-.header{
-    margin-top: 80px;
-    background-image: url('img/clover.svg');
-    background-color: rgba(0, 0, 0, 1);
-    background-size: 80% auto;
-    height: 300px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header h1{
-font-weight: 400;
-margin-bottom: 10px;
-}
-
-header h1 span{
-color: #54be90;
-text-decoration: underline;
-text-decoration-color: white;
-}
-
-.header p{
-    font-size: 1.5rem;
-    margin-top: 5px;
-}
-
